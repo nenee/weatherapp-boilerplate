@@ -1,0 +1,49 @@
+@import '~style/helpers';
+
+.container { 
+  background-image: url('../../assets/backgrounds/rain-ipad.jpg');
+  color: #fff;
+  width: 768px;
+  height: 1024px;
+  text-align: center;
+  padding-top: 120px;
+  margin: 0 auto;
+}
+.header {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+.details {
+	flex: 2;
+}
+.city {
+	flex-direction: row;
+	flex: 1;
+	font-size: 5em;
+	font-weight: 350;	
+}
+.country {
+	font-size: 5em;
+	font-weight: 350;	
+}
+.conditions {
+	flex: 1;
+	font-size: 1.7em;
+}
+.temperature {
+	flex: 2;
+	margin-top: 0;
+	font-size: 5.2em;
+	font-weight: 300;
+	letter-spacing: -12px;
+}
+.temperature:after {
+	content: "°";
+	margin: 0 0 0 1rem;
+	font-size: 0.5em;
+	font-weight: 100;
+	display: inline-block;
+	padding-top: 10px;
+	vertical-align: top;
+}
