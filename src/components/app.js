@@ -1,5 +1,4 @@
 import { h, Component } from 'preact';
-import { Router } from 'preact-router';
 
 // import required Components from 'components/'
 import Iphone from './iphone';
@@ -7,11 +6,6 @@ import Ipad from './ipad';
 
 export default class App extends Component {
 //var App = React.createClass({
-
-	// url handler
-	handleRoute = e => {
-		this.currentUrl = e.url;
-	};
 
 	// once the components are loaded, checks if the url bar has a path with "ipad" in it, if so sets state of tablet to be true
     componentDidMount() {
@@ -41,7 +35,7 @@ export default class App extends Component {
    		else {
    			return (
 				<div id="app">
-					<Iphone/>
+					<Iphone/ >
 	   			</div>
 	   		);
    		}
