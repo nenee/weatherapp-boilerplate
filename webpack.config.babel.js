@@ -42,7 +42,7 @@ module.exports = {
 			{
 				test: /\.jsx?$/,
 				exclude: path.resolve(__dirname, 'src'),
-				loader: 'source-map'
+				loader: 'source-map-loader'
 			}
 		],
 		loaders: [
